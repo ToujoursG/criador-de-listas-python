@@ -21,7 +21,7 @@ def pesquisarlista():
   while True:
     nome = input('Digite um nome a ser pesquisado: ')
     if (nome.lower() == 'todos'):
-      print(dados)
+      print(*dados, sep=" - ")
     elif (nome.lower() == 'sair'):
       break
     elif (nome.lower() == 'adicionar'):
@@ -47,7 +47,7 @@ def removerlista():
     elif (nome.lower() == 'sair'):
       break
     elif (nome.lower() == 'todos'):
-      print(dados)
+      print(*dados, sep=" - ")
     elif (nome.lower() == 'adicionar'):
       criarlista()
       break
