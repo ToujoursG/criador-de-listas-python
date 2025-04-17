@@ -1,6 +1,7 @@
 def criarlista(): # colcar os dados
-  print('\n~~~~~~~~~~/////=====\\\\\\\\\\~~~~~~~~~~\nAdicionar ')
-  print('Digite:\n Sair: encerrar programa. \n Pesquisar: pesquisar nomes \n Remover: remover nomes')
+  print('\n~~~~~~~~~~/////=====\\\\\\\\\\~~~~~~~~~~\n\n')
+  print('Adicionar'.center(36))
+  print('\nDigite:\n Sair: encerrar programa. \n Pesquisar: pesquisar nomes \n Remover: remover nomes \n')
 
   while True:
     nome = input('Digite um novo nome: ')
@@ -16,8 +17,9 @@ def criarlista(): # colcar os dados
       dados.add(nome)
 
 def pesquisarlista():
-  print('\n~~~~~~~~~~/////=====\\\\\\\\\\~~~~~~~~~~\nPesquisar')
-  print( 'Digite:\n Todos: Ver todos os nomes da lista. \n Sair: encerrar programa.\n Adicionar: adicionar nomes \n Remover: remover nomes')
+  print('\n~~~~~~~~~~/////=====\\\\\\\\\\~~~~~~~~~~\n\n')
+  print('Pesquisar'.center(36))
+  print( '\nDigite:\n Todos: Ver todos os nomes da lista. \n Sair: encerrar programa.\n Adicionar: adicionar nomes \n Remover: remover nomes \n')
   while True:
     nome = input('Digite um nome a ser pesquisado: ')
     if (nome.lower() == 'todos'):
@@ -37,8 +39,9 @@ def pesquisarlista():
         print('Esse nome nao foi achado:' )
 
 def removerlista():
-  print('\n~~~~~~~~~~/////=====\\\\\\\\\\~~~~~~~~~~\nRemover')
-  print( 'Digite:\n Todos: Ver todos os nomes da lista. \n Sair: encerrar programa. \n Adicionar: adicionar nomes. \n Pesquisar: pesquisar nomes')
+  print('\n~~~~~~~~~~/////=====\\\\\\\\\\~~~~~~~~~~\n\n')
+  print('Remover'.center(36))
+  print( '\nDigite:\n Todos: Ver todos os nomes da lista. \n Sair: encerrar programa. \n Adicionar: adicionar nomes. \n Pesquisar: pesquisar nomes \n')
   while True:
     nome = input('Digite um nome a ser removido: ')
     if (nome.lower() == 'pesquisar'):
@@ -61,7 +64,7 @@ def removerlista():
 
 dados = set()
 print('~~~~~~~~~~/////== Bem Vindo ==\\\\\\\\\\~~~~~~~~~~')
-print('\nDigite:\n Adicionar: adicionar nomes \n Pesquisar: pesquisar nomes \n Remover: remover nomes \n Sair: encerrar programa')
+print('\nDigite:\n Adicionar: adicionar nomes \n Pesquisar: pesquisar nomes \n Remover: remover nomes \n Sair: encerrar programa \n')
 while True:
     opção = input('escolha = ')
     if opção.lower() == 'pesquisar':
